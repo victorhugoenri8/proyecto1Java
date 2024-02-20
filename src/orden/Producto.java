@@ -11,8 +11,7 @@ public class Producto {
     //metodos 
 
     private Producto() {
-        contadorProducto++;
-        idProducto = contadorProducto;
+        this.idProducto = ++Producto.contadorProducto;
     }
 
     public Producto(String nombre, double precio) {
